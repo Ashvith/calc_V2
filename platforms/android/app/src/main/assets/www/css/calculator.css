@@ -1,0 +1,242 @@
+body{
+    margin: 0px;
+    background: linear-gradient(to left top,rgb(99, 99, 255),rgb(126, 197, 255));
+    font-family: josefin-sans light;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0;
+}
+  
+#navbar span{
+    text-align: center;
+    text-decoration: none;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0%;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav span, .closebtn{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(132, 132, 255);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn:hover{
+    color: #000000;
+    font-size: 230%;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .closebtn:hover{
+    color: red;
+}
+
+#menu,#title{
+    font-size: 250%;
+    color: white;
+}
+
+#title{
+    text-align: center;
+}
+
+#main{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height:450px){
+    .sidenav{ padding-top: 15px;}
+    .sidenav a{font-size: 18px;}
+}
+
+::-webkit-scrollbar{
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+
+table{
+    margin: 15% auto auto auto;
+    text-align: center;
+    border-spacing: 2px 15px;
+    padding: 5% 0px 0px 0px;
+}
+
+input[type=button]{
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size:large;
+}
+
+#calc{
+    background-color:rgba(240, 248, 255, 0.4);
+}
+
+#display{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#prev,#curr{
+    max-width: 326px;
+    overflow: auto;
+}
+
+#prev{
+    text-align: right;
+    font-size: 150%;
+    margin: 0px 0px 0px 0px;
+}
+
+#curr{
+    text-align: right;
+    font-size: 400%;
+    margin: 0px 0px 0px 0px;
+}
+
+#display{
+    height: 150px;
+}
+
+tr.keyboard th{
+    min-width: 80px;
+    height: 80px;
+}
+
+#\/{
+    background-color: aquamarine;
+}
+
+#\/:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+#\*{
+    background-color: lightsalmon;
+}
+
+#\*:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+
+#\+{
+    background-color: cornflowerblue;
+}
+
+#\+:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+#\-{
+    background-color: lightpink;
+}
+
+#\-:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+#\={
+    background-color: rgb(252, 250, 164);
+}
+
+#\=:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+#\.{
+    background-color: rgb(255, 168, 233);
+}
+
+#\.:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+#\%{
+    background-color: rgb(223, 255, 134);
+}
+
+#\%:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+#clear,#backspace,#\37,#\38,#\39,#\34,#\35,#\36,#\31,#\32,#\33,#\30,#invert{
+    background-color: rgb(234, 238, 255);
+}
+
+#clear:active,#backspace:active,#\37:active,#\38:active,#\39:active,#\34:active,#\35:active,#\36:active,#\31:active,#\32:active,#\33:active,#\30:active,#invert:active{
+    transition: 0.2s;
+    font-size: medium;
+    width: 80%;
+    height: 80%;
+}
+
+.swipe-area {
+    position: absolute;
+    width: 15px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #f3f3f300;
+    z-index: 1;
+}
+
+#context{
+    font-size: 125;
+}
+
+#info{
+    margin: 0px 50px 0px 50px;
+}

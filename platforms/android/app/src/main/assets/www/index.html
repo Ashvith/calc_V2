@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/calculator.css">
+        <style type="text/css">
+            @font-face{
+            font-family: josefin-sans light;
+            src: url(font/static/JosefinSans-Light.ttf);
+            }       
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">      
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <span href="#" id="context">About</span>
+            <div id="info">This calculator is a multi-display version and emulates the one seem in Windows 10 , although , it has it's limitations.
+                You can <b>Add</b>, <b>Subtract</b>, <b>Divide</b>, <b>Multiply</b>, <b>Negate</b> as well as <b>find instant percentage</b>.
+                In case , the calculator starts working buggy, please press <b>C (clear)</b> button to reset the algorithm.<br><br>
+                Made by:
+                <ul>
+                    <li>Ashvith Shetty</li>
+                    <li>Atul Singh</li>
+                </ul>
+            </div>
+        </div>
+        <div id="swipe-area"></div>
+        <div id=navbar>
+            <span id= "menu" onclick="openNav()">&nbsp;&#9776;</span>
+            <span id="title">Calculator</span>
+        </div>
+        <div id="calc">
+            <table>
+                <tr rowspan="2" id="display">
+                    <th colspan="4">
+                        <p id="prev"></p>
+                        <p id="curr"></p>
+                    </th>
+                </tr>
+                <tr class="keyboard">
+                    <th><input type="button" class="operator" id="clear" value="C"></th>
+                    <th><input type="button" class="operator" id="backspace" value=‹></th>
+                    <th><input type="button" class="operator" id="invert" value=&plusmn;></th>
+                    <th><input type="button" class="operator" id="/" value=&div;></th>
+                </tr>
+                <tr class="keyboard">
+                    <th><input type="button" class="number" id="7" value="7"></th>
+                    <th><input type="button" class="number" id="8" value="8"></th>
+                    <th><input type="button" class="number" id="9" value="9"></th>
+                    <th><input type="button" class="operator" id="*" value=&times;></th>
+                </tr>
+                <tr class="keyboard">
+                    <th><input type="button" class="number" id="4" value="4"></th>
+                    <th><input type="button" class="number" id="5" value="5"></th>
+                    <th><input type="button" class="number" id="6" value="6"></th>
+                    <th><input type="button" class="operator" id="-" value=&minus;></th>
+                </tr>
+                <tr class="keyboard">
+                    <th><input type="button" class="number" id="1" value="1"></th>
+                    <th><input type="button" class="number" id="2" value="2"></th>
+                    <th><input type="button" class="number" id="3" value="3"></th>
+                    <th><input type="button" class="operator" id="+" value=&plus;></th>
+                </tr>
+                <tr class="keyboard">
+                    <th><input type="button" class="operator" id="%" value="&percnt;"></th>
+                    <th><input type="button" class="number" id="0" value="0"></th>
+                    <th><input type="button" class="operator" id="." value=&dot;></th>
+                    <th><input type="button" class="operator" id="=" value=&equals;></th>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/calculator.js"></script>
+</html>
