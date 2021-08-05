@@ -1,4 +1,3 @@
-# calc_V2
+# CalculatorApp (made with Cordova)
 
-
-A simple cordova based app, that was made, using reference from Abarna's calculator app in HTML.
+A simple Cordova app implementation of a calculator. This project is not responsive for either desktop as well as mobile.
